@@ -41,21 +41,23 @@ main {
 }
 
 main .row {
-  display: inline-block;
-  margin: 10px;
+  padding: 20px;
 }
 
 main .col {
-  width: 300px;
   background-color: black;
   color: #00BDF3;
+  width: calc(100% / 3 - 20px);
   float: left;
-  line-height: 2rem;
+  margin-bottom: 20px;
+  margin-left: 10px;
+
 }
 
 main .col img {
   float: left;
-  max-width: 100px;
+  max-width: 120px;
+  margin-right: 10px;
 }
 
 main .col p:first-of-type {
@@ -71,3 +73,10 @@ main .col a:hover {
   text-decoration: underline;
   color: #E53170;
 }
+
+main .row .col .card-text {
+  line-height: 2rem;
+  margin-top: 5px;
+}
+
+
